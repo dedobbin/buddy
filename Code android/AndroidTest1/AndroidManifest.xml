@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidtest1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/><uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.androidtest1.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidtest1.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.androidtest1.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidtest1.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.androidtest1.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidtest1.AboutUs"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.example.androidtest1.ABOUTUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidtest1.Prefs"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.androidtest1.PREFS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidtest1.TextPlay"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.androidtest1.Email"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.androidtest1.Camera"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.androidtest1.Data"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.androidtest1.OpenedClass"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.androidtest1.GFX"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.androidtest1.GFXSurface"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.example.androidtest1.SoundStuff"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.androidtest1.Tabs"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.androidtest1.SimpleBrowser"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.example.androidtest1.WifiMac"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.androidtest1.WifiTabs"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

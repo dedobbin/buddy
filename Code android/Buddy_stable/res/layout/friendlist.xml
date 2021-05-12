@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FriendListActivity" 
+    android:screenOrientation="portrait">
+
+     <TextView
+        android:id="@+id/FriendOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/FriendThree"
+        android:layout_below="@+id/FriendThree"
+        android:text="name1" />
+    
+    <TextView
+        android:id="@+id/FriendTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="126dp"
+        android:text="name2" />
+
+    <TextView
+        android:id="@+id/FriendThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/FriendTwo"
+        android:text="name3" />
+
+    <TextView
+        android:id="@+id/FriendOneLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/FriendTwo"
+        android:layout_alignBottom="@+id/FriendTwo"
+        android:layout_marginLeft="53dp"
+        android:layout_toRightOf="@+id/FriendThree"
+        android:text="E0.00" />
+
+    <TextView
+        android:id="@+id/FriendTwoLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/FriendThree"
+        android:layout_alignBottom="@+id/FriendThree"
+        android:layout_alignLeft="@+id/FriendOneLoc"
+        android:text="E0.00" />
+
+    <TextView
+        android:id="@+id/FriendThreeLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/FriendFour"
+        android:layout_alignLeft="@+id/FriendTwoLoc"
+        android:text="E0.00" />
+
+
+
+    <TextView
+        android:id="@+id/FriendFourLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/FriendThreeLoc"
+        android:layout_below="@+id/FriendThreeLoc"
+        android:text="E0.00" />
+
+    <TextView
+        android:id="@+id/FriendFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/FriendOne"
+        android:layout_below="@+id/FriendOne"
+        android:text="name4" />
+
+    <TextView
+        android:id="@+id/FriendTwoTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/FriendThreeLoc"
+        android:layout_alignLeft="@+id/FriendOneTemp"
+        android:text="00" />
+
+    <TextView
+        android:id="@+id/FriendThreeTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/FriendFourLoc"
+        android:layout_alignLeft="@+id/FriendTwoTemp"
+        android:text="00" />
+
+    <TextView
+        android:id="@+id/FriendFourTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/FriendFourLoc"
+        android:layout_alignBottom="@+id/FriendFourLoc"
+        android:layout_alignLeft="@+id/FriendThreeTemp"
+        android:text="00" />
+
+    <TextView
+        android:id="@+id/ownInfoTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/FriendOneLoc"
+        android:layout_alignLeft="@+id/FriendTwo"
+        android:layout_marginBottom="17dp"
+        android:text="Names" />
+
+    <TextView
+        android:id="@+id/FriendOneTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/FriendTwoTemp"
+        android:layout_marginLeft="52dp"
+        android:layout_toRightOf="@+id/FriendOneLoc"
+        android:text="00" />
+
+    <TextView
+        android:id="@+id/tvHumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ownInfoTV"
+        android:layout_alignBottom="@+id/ownInfoTV"
+        android:layout_alignLeft="@+id/FriendOneLoc"
+        android:text="Location" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvHumText"
+        android:layout_alignBottom="@+id/tvHumText"
+        android:layout_alignLeft="@+id/FriendOneTemp"
+        android:text="Temperature" />
+
+</RelativeLayout>
